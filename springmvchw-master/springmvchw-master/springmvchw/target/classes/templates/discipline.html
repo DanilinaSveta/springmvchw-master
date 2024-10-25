@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Информация о пользователе</title>
+</head>
+<body>
+    <h1>Информация о пользователе</h1>
+
+    <ul th:object="${discipline}">
+        <li>Имя: <span th:text="*{name}"></span></li>
+        <li>Часы: <span th:text="*{hours}"></span></li>
+        <li>Входный навыки: <span th:text="*{kssInputList}"></span></li>
+        <li>Выходный навыки: <span th:text="*{kssOutputList}"></span></li>
+        <li>Кол-во работ: <span th:text="*{amountOfWork}"></span></li>
+        <li>Контроль: <span th:text="*{control}"></span></li>
+
+    </ul>
+
+</body>
+</html>
